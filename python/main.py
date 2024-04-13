@@ -39,7 +39,7 @@ if __name__ == '__main__':
     plt.imshow(target_img[:,:,::-1])
     plt.axis('off')
     # plt.show()
-    plt.savefig('source_target.jpg')
+    plt.savefig('source_target.jpg', dpi=600, bbox_inches='tight') ###保存高清图
 
     cv2.imwrite('result.jpg', resultimg)
     
